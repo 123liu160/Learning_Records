@@ -1,4 +1,4 @@
-Definition for a binary tree node.
+# 给你一棵二叉树，返回从树的右侧看过去，能看到的节点值，按从上到下排列。
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
