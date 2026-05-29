@@ -1,3 +1,8 @@
+# 给你两个数组：
+# preorder：二叉树的前序遍历
+# inorder：二叉树的中序遍历
+# 两个数组长度一样，没有重复数字。
+# 请你重建这棵二叉树，并返回根节点。
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
