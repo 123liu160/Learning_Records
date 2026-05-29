@@ -1,4 +1,5 @@
-
+# 给你一棵 二叉搜索树（BST） 和一个整数 k。
+# 返回树中 第 k 小的元素（从 1 开始数）。
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
