@@ -1,4 +1,4 @@
-Definition for a binary tree node.
+# 给你一棵二叉树的根节点，判断它是不是一棵有效的二叉搜索树（BST），是返回 true，不是返回 false。
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
