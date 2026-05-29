@@ -1,10 +1,4 @@
-Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
+# 给定一棵二叉树的根节点 root，返回它的层序遍历结果（用嵌套列表表示）。
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         # 空树直接返回空列表
@@ -18,6 +12,7 @@ class Solution:
             # 当前层的节点数量
             level_len = len(queue)
             cur_level = []
+
             # 遍历当前层所有节点
             for _ in range(level_len):
                 node = queue.popleft()
@@ -31,3 +26,5 @@ class Solution:
             # 将当前层结果加入最终列表
             res.append(cur_level)
         return res
+
+    # 普通列表list做pop(0)超级慢，deque做popleft()超快
